@@ -2,7 +2,7 @@
 var express = require('express'),
     bodyParser      = require('body-parser'),
     methodOverride  = require('method-override'),
-    sessions        = require('./sessions'),
+    color        = require('./color'),
     app = express();
 
 app.use(bodyParser.json());
