@@ -16,11 +16,10 @@ exports.findById = function (req, res, next) {
 
 exports.post = function(req, res){
     console.log('POST /');
-    console.dir(req.body);
     //var test =
     //var color = req.body.split("=")[0];
     //var value = req.body.split("=")[1];
-    console.log(req.body.red);
+    console.log(rgbColor[0]);
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end('thanks');
 };
