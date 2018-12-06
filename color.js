@@ -3,6 +3,7 @@ var rgbColor = [
     {red: 255 ,green:255, blue:255}
 ];
 
+
 exports.findAll = function (req, res, next) {
     res.send(rgbColor.red);
     console.log("Find All " + rgbColor.red);
