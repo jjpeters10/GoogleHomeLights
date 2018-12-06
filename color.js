@@ -4,7 +4,7 @@ var rgbColor = [
 ];
 
 exports.findAll = function (req, res, next) {
-    res.send(rgbColor);
+    res.send(rgbColor.red);
     console.log("Find All " + rgbColor.red);
 };
 
