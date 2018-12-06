@@ -20,12 +20,7 @@ app.all('*', function(req, res, next) {
 
 app.get('/color', color.findAll);
 app.get('/color/:id', color.findById);
-app.post('/', function(req, res){
-    console.log('POST /');
-    console.dir(req.body);
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('thanks');
-});
+app.post('/', color.post);
 
 
 app.set('port', process.env.PORT || 5000);

@@ -13,3 +13,10 @@ exports.findById = function (req, res, next) {
     var id = req.params.id;
     res.send(rgbColor[id]);
 };
+
+exports.post = function(req, res){
+    console.log('POST /');
+    console.dir(req.body);
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('thanks');
+};
