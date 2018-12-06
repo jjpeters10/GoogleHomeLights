@@ -1,8 +1,8 @@
 
 var rgbColor = [
-    {id:0 , red: 255},
-    {id:1 , green:255},
-    {id:2 , blue:255}
+    {red: 255},
+    {green:255},
+    {blue:255}
 ];
 
 exports.findAll = function (req, res, next) {
@@ -19,7 +19,7 @@ exports.post = function(req, res){
     //var test =
     //var color = req.body.split("=")[0];
     //var value = req.body.split("=")[1];
-    console.log(rgbColor[0]);
+    console.log(rgbColor[0].red);
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end('thanks');
 };
