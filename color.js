@@ -1,8 +1,6 @@
 
 var rgbColor = [
-    {red: 255},
-    {green:255},
-    {blue:255}
+    {red: 255 ,green:255, blue:255}
 ];
 
 exports.findAll = function (req, res, next) {
@@ -19,7 +17,8 @@ exports.post = function(req, res){
     //var test =
     //var color = req.body.split("=")[0];
     //var value = req.body.split("=")[1];
-    console.log(rgbColor[0].red);
+    rgbColor.red = req.body.red
+    console.log(rgbColor.red);
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end('thanks');
 };
