@@ -5,6 +5,7 @@ var rgbColor = [
 
 exports.findAll = function (req, res, next) {
     res.send(rgbColor);
+    console.log("Find All " + rgbColor.red);
 };
 
 exports.findById = function (req, res, next) {
@@ -14,9 +15,6 @@ exports.findById = function (req, res, next) {
 
 exports.post = function(req, res){
     console.log('POST /');
-    //var test =
-    //var color = req.body.split("=")[0];
-    //var value = req.body.split("=")[1];
     rgbColor.red = req.body.red
     console.log(rgbColor.red);
     res.writeHead(200, {'Content-Type': 'text/html'});
