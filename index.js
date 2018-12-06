@@ -18,8 +18,8 @@ app.all('*', function(req, res, next) {
     next();
 });
 
-app.get('/sessions', sessions.findAll);
-app.get('/sessions/:id', sessions.findById);
+app.get('/color', sessions.findAll);
+app.get('/color/:id', color.findById);
 
 app.set('port', process.env.PORT || 5000);
 
