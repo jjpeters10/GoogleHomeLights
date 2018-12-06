@@ -11,5 +11,5 @@ exports.findAll = function (req, res, next) {
 
 exports.findById = function (req, res, next) {
     var id = req.params.id;
-    res.send(rgbColor[id]);+
+    res.send(rgbColor[id]);
 };
