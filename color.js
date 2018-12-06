@@ -20,7 +20,7 @@ exports.post = function(req, res){
     //var test =
     //var color = req.body.split("=")[0];
     //var value = req.body.split("=")[1];
-    console.log(req.body);
+    console.log(req.body.red);
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end('thanks');
 };
