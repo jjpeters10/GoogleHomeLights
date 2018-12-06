@@ -17,6 +17,9 @@ exports.findById = function (req, res, next) {
 exports.post = function(req, res){
     console.log('POST /');
     console.dir(req.body);
+    var color = req.body.split("=")[0];
+    var value = req.body.split("=")[1];
+    console.log(color);
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end('thanks');
 };
